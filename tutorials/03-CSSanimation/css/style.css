@@ -1,0 +1,123 @@
+@keyframes color-animation {
+    0% {
+        background-color: rgb(236, 200, 220);
+    }
+
+    50% {
+        background-color: rgb(218, 140, 166);
+    }
+
+    100% {
+        background-color: rgb(222, 120, 145);
+    }
+}
+
+.background {
+    animation: color-animation 3s infinite alternate;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(142, 100, 221);
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    transition: transform 1s, background-color 1s;
+}
+
+.title:hover {
+    background-color: rgb(173, 173, 229);
+    transform: scale(0.8);
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 75px auto;
+    border-radius: 20px;
+    background-color: rgb(108, 108, 199);
+    transition: transform 1s, background-color 1s;
+}
+
+.square:hover {
+    background-color: rgb(195, 173, 236);
+    transform: rotate(45deg);
+}
+
+.button {
+    background-color: rgb(142, 100, 221);
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 1s;
+}
+
+.button-div {
+    text-align: center;
+    margin: 100px;
+    transition: transform 1s;
+}
+
+.button:hover {
+    background-color: rgb(173, 173, 229);
+}
+
+.button-div:hover {
+    transform: scale(1.5);
+}
+
+@keyframes button-animation {
+    0% {
+        background-color: rgb(255, 97, 97);
+    }
+
+    20% {
+        background-color: rgb(255, 159, 67);
+    }
+
+    40% {
+        background-color: rgb(240, 234, 128);
+    }
+
+    60% {
+        background-color: rgb(99, 212, 129);
+    }
+
+    80% {
+        background-color: rgb(120, 181, 222);
+    }
+
+    100% {
+        background-color: rgb(178, 120, 222);
+    }
+}
+
+.button2 {
+    animation: button-animation 3s infinite alternate;
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 1s, color 1s;
+}
+
+.button2-div {
+    text-align: center;
+    margin: 100px;
+    transition: transform 1s;
+}
+
+.button2:hover {
+    background-color: rgb(251, 248, 243);
+    color: black;
+    animation: button-animation 0s;
+}
+
+.button2-div:hover {
+    transform: scale(1.5);
+}
