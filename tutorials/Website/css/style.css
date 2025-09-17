@@ -1,0 +1,23 @@
+.background {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    color: #333; /* Dark grey text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3c3c3c; /* White background for content boxes */
+}
+
+.insidetext {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul navbar {
+    float: right;
+}
