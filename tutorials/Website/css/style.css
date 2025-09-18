@@ -1,23 +1,95 @@
 .background {
-    background-color: #f0f0f0; /* Light grey background */
-    font-family: Arial, sans-serif; /* Clean and modern font */
-    color: #333; /* Dark grey text for readability */
+    background-color: #e3ceb3;
+    /* Light grey background */
+    font-family: Arial, sans-serif;
+    /* Clean and modern font */
+    color: #333;
+    /* Dark grey text for readability */
     margin: 0;
     padding: 0;
 }
 
 .box {
     border-radius: 10px;
+    width: 80%;
     padding: 20px;
-    margin: 20px;
-    background-color: #3c3c3c; /* White background for content boxes */
+    margin: 20px auto;
+    background-color: #3c3c3c;
+    color: white;
+    transition: background-color 1s, color 1s, transform 1s;
 }
+
+.box:hover {
+    background-color: #d3d3d3;
+    color: black;
+    transform: scale(1.05);
+}
+
 
 .insidetext {
-    color: white;
     font-family: 'Courier New', Courier, monospace;
+    width: 95%;
+    margin: 20px auto;
 }
 
-ul navbar {
-    float: right;
+.titlebox {
+    background-color: rgb(163, 11, 42);
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.header {
+    color: black;
+    margin: 0px 2%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Monoton', Courier, monospace;
+}
+
+.subheader {
+    color: black;
+    margin: 0px 2%;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0px;
+    height: 5%;
+    width: 100%;
+    background: rgb(37, 37, 37);
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbarlist {
+    display: flex;
+    list-style: none;
+}
+
+.navbarlist li {
+    margin-right: 20px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbarlist li:hover {
+    background-color: rgb(163, 11, 42);
+}
+
+.navbarlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
