@@ -1,0 +1,58 @@
+
+body {
+    background-color: rgb(70, 70, 70);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.titlebox {
+    background-color: rgb(43, 43, 43);
+    width: 50%;
+    border-radius: 10px;
+    margin: 10% auto;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titlebox h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.titlebox h3 {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}
+
+.button {
+    background-color: rgb(43, 43, 43);
+    width: 5%;
+    margin: 0px auto;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    transition: background-color 0.5s;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-div {
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+.button-div:hover {
+    transform: scale(1.5);
+}

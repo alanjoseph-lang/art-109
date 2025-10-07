@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(70, 70, 70);
+    height: 200vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: rgb(43, 43, 43);
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    color: white;
+    text-align: left;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input-box {
+    background-color: rgb(43, 43, 43);
+    width: 20%;
+    height: 180px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 180px;
+    color: white;
+    text-align: left;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.tool {
+   display: flex;
+   justify-content: center;
+   width: 95%;
+   margin: 0px auto;
+   padding: 40px 0px;
+   border-radius: 20px;
+   background-color: rgb(30, 30, 30);
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%; /* Example: set table width */
+    height: 45%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+ }
+
+td {
+    border: 1px solid #ccc; /* Example: light gray border */
+    padding: 8px; /* Example: spacing inside cells */
+    color: white;
+    font-weight: 400;
+    text-align: center; /* Example: left-align text in cells */
+    font-size: 10px;
+}
+ 
+.highlight-edge {
+    background-color: rgb(255, 255, 255); /* choose highlight color */
+    color: black;
+}
+
+.highlight-header {
+    background-color: rgb(255, 123, 0); /* stronger highlight for headers */
+    color: black;
+}
+
+td:hover {
+    background-color: rgb(255, 123, 0); /* strong highlight for hovered cell */
+    cursor: pointer;
+}
+
+th {
+    border: 1px solid #ccc; /* Example: light gray border */
+    padding: 8px; /* Example: spacing inside cells */
+    text-align: center; /* Example: left-align text in cells */
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-size: 10px;
+}

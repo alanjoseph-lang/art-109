@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenere Puzzle</title>
+    <link rel="stylesheet" href="../css/puzzle.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Questions</h1>
+        <h3>Answer the questions. The first letter of each correct answer will form your password when arranged by question order. Once you have the password, you can press the interactive square 
+            button and it will take you to the Vigenere Square tool in a new tab. You can use this to help you decode the message. When you are done, type your answer into the field at the bottom 
+            of the box and submit to see if you are correct</h3>
+        <h3>*Hack: one of the question answers is the password itself. If you want to test your luck/intuition, you could potentially get the password without answering all the questions</h3>
+        <h2>Encoded Message: JHCZKZOPYD</h2>
+        <div class="input-box">
+            <input class="input" type="text" id="passwordlog" name="passwordlog" placeholder="Log your password down as you progress...">
+            <input class="input" type="text" id="answer" name="answer" placeholder="Type your answer here...">
+            <button class="submit" type="submit">Submit</button>
+        </div>
+    </div>
+    <div class="quiz-box">
+        <h2>Quiz</h2>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <div id="options"></div>
+            <button id="submit-btn" class="submit">Submit</button>
+            <div class="nav-buttons">
+                <button id="back-btn" class="submit" style="display:none;">Back</button>
+                <button id="next-btn" class="submit" style="display:none;">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="button-div">
+        <h4 class="button"><a href="../homepage.html">Back Home</a></h4>
+        <h4 class="button"><a href="../square.html" target="_blank" rel="noopener noreferrer">Interactive Square</a></h4>
+        <h4 class="button"><a href="../directions.html">Cipher Rules</a></h4>
+    </div>
+</body>
+<script src="../javascript/puzzle2.js"></script>
+<script src="../javascript/inputCheck2.js"></script>
+</html>
