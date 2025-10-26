@@ -25,7 +25,7 @@ html, body {
 
 .box {
     border-radius: 50px;
-    width: 60%;
+    width: 70%;
     padding: 30px;
     margin: 40px auto;
     background-color: #3c3c3c;
@@ -43,9 +43,13 @@ html, body {
     transform: scale(1.05);
 }
 
-.box:hover .insidetext {
+.box:hover .insidetext  {
     transform: translateX(2%);
 }
+
+.box:hover .box-image img {
+    transform: translateX(15%);
+}   
 
 .box:hover a {
     color: black;
@@ -54,7 +58,7 @@ html, body {
 .insidetext {
     font-family: 'Nunito', Courier, monospace;
     font-size: 17px;
-    width: 60%;
+    width: 70%;
     margin: 20px 70px;
     transition: transform 0.5s ease-in-out;
 }
@@ -159,14 +163,18 @@ html, body {
 .box-content {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
 .box-image img {
-  width: 200px;
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: auto;
   border-radius: 20px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .box-text {
