@@ -155,3 +155,88 @@ html, body {
     color: white;
     font-size: 18px;
 }
+
+.box-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.box-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px 10%;
+}
+
+.project-box {
+  background-color: #3c3c3c;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-box:hover {
+  background-color: rgb(201, 89, 89);
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  background-color: #6b6b6b;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-family: 'Fugaz One', sans-serif;
+  font-size: 22px;
+  margin: 10px 0 5px;
+}
+
+.project-description {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .box-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box-image img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .insidetext {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .projects {
+    padding: 20px;
+  }
+}

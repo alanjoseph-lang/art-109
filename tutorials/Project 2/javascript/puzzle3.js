@@ -84,11 +84,11 @@ const quizData = [
         question: "What species is the biggest victim of the Ivory Trade?",
         options: [
             "Rhino",
-            "(Indian) Elephant",
-            "(African) Elephant",
+            "Elephant (Indian)",
+            "Elephant (African)",
             "Sabertooth Tiger"
         ],
-        correct: 3
+        correct: 2
     },
 ];
 

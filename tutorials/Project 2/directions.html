@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="css/directions.css">
 </head>
 <body>
+    <div class="button-div">
+        <button class="button"><a href="homepage.html">Back Home</a></h4>
+        <button class="button"><a href="directions2.html">Next</a></h4>
+    </div>
     <div class="box">
         <h1>Vigenere Cipher Rules</h1>
-        <br>
-        <h3>Einstein Explanation: Key Vigenere is a cipher that uses a password and a letter grid to encode messages. The letters of the message and the passcode correspond to each other based on the order of the alphabet. For 
-        example, if the passcode is "KEY" and the message is "HELLO", then the first letter of the message (H) is encoded using the first letter of the passcode (K), the second letter of the message (E) is 
+        
+        <h3 class="subtitle">Einstein Explanation:</h3>
+        <h3>Key Vigenere is a cipher that uses a password and a letter grid to encode messages. The letters of the message and the passcode correspond to each other based on the order of the alphabet.</h3>
+        <h3>
+        For example, if the passcode is "KEY" and the message is "HELLO", then the first letter of the message (H) is encoded using the first letter of the passcode (K), the second letter of the message (E) is 
         encoded using the second letter of the passcode (E), and so on. 
-        <br>
+        </h3>
+        <h3>
         When the end of the passcode is reached, it loops back to the beginning. The encoding is done by shifting each letter of the message 
-        forward in the alphabet by a number of positions equal to the position of the corresponding letter in the passcode (A=0, B=1, C=2, ..., Z=25). For example, using the passcode "KEY" to encode "HELLO" 
-        would result in "RIJVS". To decode a message, you would reverse the process by shifting each letter of the encoded message backward by the position of the corresponding letter in the passcode. 
+        forward in the alphabet by a number of positions equal to the position of the corresponding letter in the passcode (A=0, B=1, C=2, ..., Z=25). 
+        </h3>
+        <h3>
+        For example, using the passcode "KEY" to encode "HELLO" would result in "RIJVS". To decode a message, you would reverse the process by shifting each letter of the encoded message backward by the position 
+        of the corresponding letter in the passcode. 
         </h3>
         <br>
-        <h3>Caveman Explanation: The explanation is complex, but it is very simple in practice. Just find the password letter on the top row, then find the letter from the encoded message in the left column. Find where the two meet, and that is the decoded letter.
+        <h3 class="subtitle">Caveman Explanation:</h3>
+        <h3>The explanation is complex, but it is very simple in practice. Just find the password letter on the top row, then find the letter from the encoded message in the left column. Find where the two meet, and that is the decoded letter.
         </h3>
-    </div>
-    <div class="button-div">
-        <h4 class="button"><a href="homepage.html">Back Home</a></h4>
-        <h4 class="button"><a href="directions2.html">Next</a></h4>
     </div>
 </body>
 </html>
