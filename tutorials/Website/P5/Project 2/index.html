@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+    body {
+      padding: 50;
+      margin: 50;
+      background-color: #080512;
+    }
+
+    h1 {
+      color: rgb(252, 157, 220);
+      font-size: 50;
+      margin-bottom: 10px;
+      text-shadow:
+        0 0 10px rgb(255, 123, 176),
+        /* First shadow layer */
+        0 0 20px rgb(255, 56, 152),
+        /* Second shadow layer for more intensity */
+        0 0 30px rgb(250, 11, 158);
+      /* Third shadow layer for wider spread */
+    }
+
+    h3 {
+      color: rgb(217, 202, 244);
+      font-size: 25;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      text-shadow:
+        0 0 10px rgb(255, 188, 215);
+        /* First shadow layer */
+    }
+
+    p {
+      color: rgb(217, 202, 244);
+      margin-bottom: 40px;
+      max-width: 1000px;
+      line-height: 1.8;
+      text-shadow:
+        0 0 10px rgb(255, 188, 215);
+        /* First shadow layer */
+    }
+
+    .description {
+      font-size: 18;
+      margin-bottom: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Project 2:</h1>
+  <h3>Timelapse Algorithms</h3>
+  <p class="description">Description:</p>
+  <p>For Project 2, I created a timelapse animation that showcases various algorithmic movements using p5.js.
+          The animation consists of three distinct acts, each demonstrating different mathematical functions and motion
+          techniques.
+          In Act 1, I implemented the required sine wave pattern that smoothly oscillates across the canvas. I also
+          implemented a kaleidescope
+          pattern that I sourced and edited from the p5.js website. Act 2 features a strobe radial effect that pulses
+          and a sequential radial dot
+          pattern. Both also used the kaleidescope code from p5.js as a base. In Act 3, I made a spirograph pattern with 
+          squares that rotate and change color continuosly. Although I did start off with the p5.js spirograph code,
+          I used chatgpt to help figure out how to adjust the formula to my preference and how to implement it in code. I also included 2 sin waves 
+          on the top and bottom of the canvas to frame the spirograph in the center. These waves have a lower amplitude and higher
+          frequency and also have
+          a slight phase shift. The shift goes left to right on the top sine wave, and right to left on the bottom wave. Finally, I 
+          took a page from my exercise 3 & 4 and added a glow effect that gave all my algorithmic elements a strobe like effect.
+          Overall, this project allowed me to put together my previous skills from the exercises such as developing classes, working 
+          with trignometric functions, working with speed and motion, and more.
+  </p>
+  <p>*Epilespy Warning: This project has multiple flashing strobe effects. Watch at your own risk.</p>
+</body>
+
+</html>

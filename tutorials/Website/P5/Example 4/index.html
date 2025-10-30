@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+   
+       body {
+    padding: 50; 
+    margin: 50;
+  	background-color: #0c0241;
+    }
+
+    h1 { 
+      color:rgb(129, 104, 205);
+	    font-size: 50;
+      margin-bottom: 10px;
+    }
+   
+   h3 { 
+      color:rgb(217, 202, 244);
+      font-size: 25;
+      margin-top: 5px;
+      margin-bottom: 40px;
+   }
+
+   p { 
+    color:rgb(217, 202, 244);
+    margin-bottom: 40px;
+    max-width: 600px;
+    line-height: 1.8;
+  }
+
+  ul.functions {
+      color:rgb(217, 202, 244);
+      list-style-type: none;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 520px;
+      font-size: 12;
+      gap: 40px;
+      background-color: #2a0852;
+      padding: 20px 40px;
+      border-radius: 20px;
+    }
+
+  .description {
+    font-size: 18;
+    margin-bottom: 10px;
+  }
+
+  </style>
+
+</head>
+<body>
+  <h1>Exercise 4</h1>
+  <h3>Bioluminescent Jellyfish</h3>
+  <p class="description">Description:</p>
+  <p>For this exercise, I had to turn my original jellyfish into a class and make atleast 15 of them on the canvas. Because of this, I decided to do a bioluminiscent deep sea theme. I randomized the colors and sizes, added opacity, and tweaked the trignometric animations of the base model to better fit this theme. For my interactions, I wanted something that would be on theme with the concept, so I decided to play with the rotation speeds as well as make the jellyfish move away if you clicked near them. I also created a glow pulse effect that shows up whenever the jellyfish are reacting to the effects.</p>
+  <ul class="functions">
+    <li>Click to push the Jellyfish</li>
+    <li>Press R to make them rotate faster</li>
+    <li>Reload to randomize colors</li>
+  </ul>
+</body>
+</html>

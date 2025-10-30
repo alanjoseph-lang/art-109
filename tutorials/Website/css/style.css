@@ -1,180 +1,194 @@
+/* =========================================================
+   BASE STYLES
+========================================================= */
 .background {
-    background-color: #ffecd3;
-    margin: 0;
-    padding: 0;
+  background-color: #ffecd3;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
+/* =========================================================
+   HEADER SECTION
+========================================================= */
 #header-image-menu {
-    position: relative;  /* lets us absolutely position the titlebox inside */
-    width: 100%;
-    height: auto; /* keeps image responsive */
-    margin-bottom: 130px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 130px;
 }
 
 .header-img {
-    width: 100%;
-    height: auto;
-    display: block; /* removes bottom gap */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.box {
-    border-radius: 50px;
-    width: 70%;
-    padding: 30px;
-    margin: 40px auto;
-    background-color: #3c3c3c;
-    color: white;
-    transition: background-color 0.5s, color 0.5s, transform 0.5s;
-}
-
-.clear {
-    margin-bottom: 200px;
-}
-
-.box:hover {
-    background-color: rgb(201, 89, 89);
-    color: black;
-    transform: scale(1.05);
-}
-
-.box:hover .insidetext  {
-    transform: translateX(2%);
-}
-
-.box:hover .box-image img {
-    transform: translateX(15%);
-}   
-
-.box:hover a {
-    color: black;
-}
-
-.insidetext {
-    font-family: 'Nunito', Courier, monospace;
-    font-size: 17px;
-    width: 70%;
-    margin: 20px 70px;
-    transition: transform 0.5s ease-in-out;
-}
-
-.insidetext li {
-    list-style: none;
-    padding: 10px 0px;
-}
-
-.insidetext li a {
-    color: white;
-    transition: color 0.5s ease-in-out;
-}
-
+/* =========================================================
+   TITLE BOX (NAME + SUBHEADER)
+========================================================= */
 .titlebox {
-    position: relative; /* keeps box centered */
-    background-color: rgba(230, 37, 75, 0.95);
-    width: 80%;
-    margin: 0px auto;
-    margin-top: -400px;
-    border-radius: 130px;
-    padding: 80px 30px;
-    text-align: left;
-    color: white;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+  background-color: rgba(230, 37, 75, 0.95);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -350px;
+  margin-bottom: -20px;
+  border-radius: 130px;
+  padding: 80px 30px;
+  text-align: left;
+  color: white;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .titlebox:hover {
-    background-color: rgb(39, 39, 39);
-    transform: scale(1.05);
+  background-color: rgb(39, 39, 39);
+  transform: scale(1.05);
+  box-shadow:
+    0 4px 8px rgb(177, 20, 54),
+    0 6px 20px rgb(191, 21, 69);
+  text-shadow:
+    0 3px 7px rgb(255, 191, 205, 0.4);
 }
 
 .header {
-    color: rgb(0, 0, 0);
-    margin: 0px 5%;
-    font-size: 70px;
-    font-family: 'Fugaz one', Courier, monospace;
-    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+  margin: 0 5%;
+  font-size: 350%;
+  font-family: 'Fugaz one', Courier, monospace;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .subheader {
-    color: rgb(0, 0, 0);
-    margin: 0px 5%;
-    font-size: 30px;
-    font-family: 'Nunito', Courier, monospace;
-    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+  margin: 0 5%;
+  font-size: 150%;
+  font-family: 'Nunito', Courier, monospace;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .titlebox:hover .header {
-    transform: translateX(1%);
-    color:rgb(255, 255, 255)
+  transform: translateX(1%);
+  color: rgb(255, 255, 255);
 }
 
 .titlebox:hover .subheader {
-    transform: translateX(2%);
-    color:rgb(255, 255, 255)
+  transform: translateX(2%);
+  color: rgb(255, 255, 255);
 }
 
-
+/* =========================================================
+   NAVIGATION BAR
+========================================================= */
 .navbar {
-    z-index: 100;
-    box-sizing: border-box;
-    display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: flex-start;
-    top: 0px;
-    height: 5%;
-    width: 100%;
-    background: rgb(37, 37, 37);
-    background-blend-mode: darken;
-    background-size: cover;
-    color: white;
-    font-family: 'Nunito', Courier, monospace;
-    padding: 10px 20px;
+  z-index: 100;
+  box-sizing: border-box;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  height: 3%;
+  width: 100%;
+  background: rgb(37, 37, 37);
+  background-blend-mode: darken;
+  background-size: cover;
+  color: white;
+  font-family: 'Nunito', Courier, monospace;
+  font-size: 5px;
+  padding: 10px 20px;
 }
 
 .navbarlist {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .navbarlist li {
-    margin-right: 20px;
-    padding: 20px 15px;
-    border-radius: 40px;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-right: 20px;
+  padding: 20px 15px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .navbarlist li:hover {
-    background-color: rgb(163, 11, 42);
-    transform: scale(1.2);
+  background-color: rgba(117, 117, 117, 0.2);
+  transform: scale(1.05);
+  box-shadow:
+    0 4px 8px rgb(177, 20, 54),
+    0 6px 20px rgb(191, 21, 69);
+  text-shadow:
+    0 3px 7px rgb(255, 191, 205, 0.4);
 }
 
 .navbarlist li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* =========================================================
+   MAIN BOX SECTION (WELCOME SECTION)
+========================================================= */
+.box {
+  border-radius: 50px;
+  width: 70%;
+  padding: 30px;
+  margin: 40px auto;
+  background-color: #4f4f4f;
+  color: white;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.clear {
+  margin-bottom: 200px;
+}
+
+.box:hover {
+  background-color: rgb(201, 89, 89);
+  color: black;
+  transform: scale(1.05);
+  box-shadow:
+    0 4px 8px rgb(50, 50, 50),
+    0 6px 20px rgb(51, 51, 51);
+}
+
+.box:hover .insidetext {
+  transform: translateX(-2%);
+}
+
+.box:hover .box-image img {
+  transform: translateX(2%);
+  border-color: rgb(71, 71, 71);
+  box-shadow:
+    0 4px 8px rgb(50, 50, 50),
+    0 6px 20px rgb(51, 51, 51);
+}
+
+.box:hover a {
+  color: black;
 }
 
 .box-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .box-image img {
   width: 350px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 50px;
   height: auto;
   border-radius: 20px;
-  transition: transform 0.5s ease-in-out;
+  transition: border-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .box-text {
@@ -182,30 +196,75 @@ html, body {
   min-width: 250px;
 }
 
+.insidetext {
+  font-family: 'Nunito', Courier, monospace;
+  font-size: 17px;
+  width: 80%;
+  margin: 20px 70px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.insidetext li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.insidetext li a {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+/* =========================================================
+   PROJECTS SECTION (Refactored to individual classes)
+========================================================= */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 120px auto;
+  width: 90%;
+}
+
+.porttitle {
+  font-family: 'Fugaz One', sans-serif;
+  font-size: 50px;
+  text-align: left;
+  margin: 0 auto;
+  background-color: rgb(201, 89, 89);
+  color: rgb(36, 36, 36);
+  padding: 20px 80px;
+  border-radius: 20px;
+  max-width: 70%;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.porttitle:hover {
+  color: white;
+  background-color: rgb(57, 57, 57);
+  transform: scale(1.02);
+  box-shadow:
+    0 4px 8px rgb(250, 118, 118),
+    0 6px 20px rgb(243, 84, 84);
+}
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 40px 10%;
-}
-
-.project-box {
-  background-color: #3c3c3c;
-  color: white;
-  border-radius: 20px;
-  text-align: center;
-  padding: 30px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.project-box:hover {
-  background-color: rgb(201, 89, 89);
-  transform: scale(1.05);
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .project-image {
-  width: 100%;
-  height: 180px;
+  width: 120%;
+  margin-top: -15%;
   background-color: #6b6b6b;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -219,13 +278,477 @@ html, body {
 
 .project-description {
   font-family: 'Nunito', sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   color: #ccc;
 }
 
-@media (max-width: 768px) {
+.project-titleB {
+  font-family: 'Fugaz One', sans-serif;
+  font-size: 22px;
+  margin-top: -25px;
+}
+
+.project-descriptionB {
+  font-family: 'Nunito', sans-serif;
+  font-size: 8px;
+  color: #ccc;
+  margin-top: -10px;
+}
+
+.warning {
+  font-family: 'Nunito', sans-serif;
+  font-size: 8px;
+  color: #5d1414;
+  margin-top: 5px;
+}
+
+.subtitle {
+  font-family: 'Fugaz One', sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* --- Spectrum Project --- */
+.project-spectrum {
+  background-color: #4f4f4f;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  height: 370px;
+  transform-origin: top left;
+  transition: transform 1s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-spectrum:hover {
+  background-color: rgb(201, 89, 89);
+  transform: scale(2.2);
+  border-radius: 10px;
+  height: 110%;
+  z-index: 15;
+  box-shadow:
+    0 4px 8px rgb(50, 50, 50),
+    0 6px 20px rgb(51, 51, 51);
+}
+
+/* --- Coding Project --- */
+.project-coding {
+  background-color: #4f4f4f;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  height: 370px;
+  transform-origin: top center;
+  transition: transform 1s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-coding:hover {
+  background-color: rgb(201, 89, 89);
+  transform: scale(2.09);
+  border-radius: 10px;
+  height: 90%;
+  z-index: 15;
+  box-shadow:
+    0 4px 8px rgb(50, 50, 50),
+    0 6px 20px rgb(51, 51, 51);
+}
+
+/* --- Poster Project --- */
+.project-poster {
+  background-color: #4f4f4f;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  height: 340px;
+  transform-origin: top right;
+  transition: transform 1s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-poster:hover {
+  background-color: rgb(201, 89, 89);
+  transform: scale(2.2);
+  border-radius: 10px;
+  height: 115%;
+  z-index: 15;
+  box-shadow:
+    0 4px 8px rgb(50, 50, 50),
+    0 6px 20px rgb(51, 51, 51);
+}
+
+/* --- Future Project --- */
+.project-future {
+  background-color: #4f4f4f;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  height: 340px;
+  transform-origin: top left;
+  transition: transform 1s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-future:hover {
+  background-color: rgb(201, 89, 89);
+  transform: scale(2.09);
+  border-radius: 10px;
+  height: 100%;
+  z-index: 15;
+  box-shadow:
+    0 4px 8px rgb(50, 50, 50),
+    0 6px 20px rgb(51, 51, 51);
+}
+
+.project-spectrum,
+.project-coding,
+.project-poster,
+.project-future {
+  padding: 25px;
+  height: 350px;
+}
+
+/* =========================================================
+   PROJECT CARD CONTENT & HOVER SWAP LAYERS
+========================================================= */
+.project-content {
+  position: relative;
+  min-height: 500px;
+}
+
+.card-layer {
+  position: absolute;
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.card-layer.front {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-layer.back {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+/* Hover transition */
+.project-spectrum:hover .card-layer.front,
+.project-coding:hover .card-layer.front,
+.project-poster:hover .card-layer.front,
+.project-future:hover .card-layer.front {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.project-spectrum:hover .card-layer.back,
+.project-coding:hover .card-layer.back,
+.project-poster:hover .card-layer.back,
+.project-future:hover .card-layer.back {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Show-back transition (touch/click toggle) */
+.project-spectrum.show-back .card-layer.front,
+.project-coding.show-back .card-layer.front,
+.project-poster.show-back .card-layer.front,
+.project-future.show-back .card-layer.front {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.project-spectrum.show-back .card-layer.back,
+.project-coding.show-back .card-layer.back,
+.project-poster.show-back .card-layer.back,
+.project-future.show-back .card-layer.back {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* =========================================================
+   PROJECT CARD INNER ELEMENTS
+========================================================= */
+.project-cta {
+  margin-top: 30px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  background: #fff;
+  color: #3c3c3c;
+  font-size: 7px;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+/* Spectrum image classes */
+.spectrum,
+.coding,
+.poster {
+  width: 85%;
+  margin-top: 6.5%;
+  margin-bottom: 8%;
+  border-radius: 15px;
+}
+
+.spectrumlogo {
+  width: 22%;
+  margin: 2px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.spectrummockup {
+  width: 45%;
+  margin: 1px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.spectrumanimation {
+  width: 40%;
+  margin: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.spectrumDM {
+  width: 47%;
+  margin: 2px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.spectrumlogo:hover,
+.spectrummockup:hover,
+.spectrumDM:hover {
+  transform: scale(1.1);
+}
+
+/* Coding grid structure */
+.project-coding .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-coding .individual {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.codingproject {
+  width: 90%;
+  max-width: 150px;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.codingproject:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  margin-top: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 8px;
+  color: #fff;
+}
+
+/* Poster Box */
+
+.fashionposter {
+  width: 31%;
+  margin-top: 2%;
+  margin-bottom: 8%;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fashionposter:hover {
+  transform: scale(1.1);
+}
+
+.project-poster .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-poster .individual {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.posterproject {
+  width: 90%;
+  max-width: 150px;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.posterproject:hover {
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   RESUME IMAGE
+========================================================= */
+.resume-img {
+  display: block;
+  margin: 200px auto;
+  padding: 40px;
+  background-color: rgb(201, 89, 89);
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.resume-img:hover {
+  transform: scale(1.02);
+  background-color: rgb(240, 140, 140);
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+@media (max-width: 1024px){
+  .projects{
+    scale: calc(0.6);
+    gap: 3%;
+    margin-top: -200px;
+  }
+
+  .project-image {
+    width: 110%;
+    margin-top: -10%;
+  }
+
+   .box-image img {
+    width: 400px;
+    margin: 20px auto;
+  }
+
+   .titlebox {
+    margin-top: -200px;
+    height: 10px;
+    width: 75%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .header {
+    margin-top: -20px;
+    font-size: 250%;
+  }
+
+  .subheader {
+    font-size: 100%;
+  }
+
+  .porttitle {
+    font-size: 40px;
+    padding: 20px 60px;
+    max-width: 70%;
+    margin-top: 80px;
+  }
+
+  .project-spectrum:hover,
+  .project-coding:hover,
+  .project-poster:hover, 
+  .project-future:hover {
+    transform: scale(3.2);
+  }
+
+  .project-spectrum:hover {
+    height: 170%;
+  }
+
+
+  .spectrumlogo {
+    width: 40%;
+  }
+
+  .spectrumDM {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  html,
+  body {
+    height: 110%;
+  }
+
+  .navbar {
+    height: 50px;
+    width: 100%;
+  }
+
+  .navbarlist li {
+    padding: 3px 8px;
+  }
+
+  .navbar li a {
+    font-size: 12px;
+  }
+
+  .navbarlist {
+    flex-direction: row;
+    gap: 1px;
+    margin-left: -30px;
+  }
+
+  .titlebox {
+    margin-top: -150px;
+    height: 10px;
+    width: 75%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .header {
+    margin-top: -20px;
+    font-size: 200%;
+  }
+
+  .subheader {
+    font-size: 80%;
+  }
+
   .box {
-    width: 90%;
+    margin-top: -20px;
+    width: 80%;
     padding: 20px;
   }
 
@@ -236,15 +759,60 @@ html, body {
 
   .box-image img {
     width: 150px;
-    margin-bottom: 20px;
+    margin: 20px auto;
   }
 
   .insidetext {
-    width: 100%;
-    margin: 10px 0;
+    font-size: 12px;
+    text-align: left;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .porttitle {
+    font-size: 30px;
+    padding: 20px 40px;
+    max-width: 70%;
+    margin-top: 80px;
   }
 
   .projects {
+    gap: 30px;
+    scale: calc(0.4);
     padding: 20px;
+    transform-origin: top center;
+    margin-top: 20px;
   }
+
+  .project-image {
+    width: 100%;
+    margin-top: -5%;
+  }
+
+  .project-spectrum:hover,
+  .project-coding:hover,
+  .project-poster:hover, 
+  .project-future:hover {
+    transform: scale(3.2);
+  }
+
+  .project-spectrum:hover {
+    height: 160%;
+  }
+
+
+  .spectrumlogo {
+    width: 40%;
+  }
+
+  .spectrumDM {
+    width: 100%;
+  }
+
+  .resume-img {
+    width: 70%;
+    margin: -40px auto;
+    padding: 10px;
+  }
+
 }
