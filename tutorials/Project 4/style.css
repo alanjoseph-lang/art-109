@@ -1,0 +1,39 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #486362;
+    color: #a9c4c0;
+}
+
+.box {
+    margin: 5% auto;
+    width: 60%;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background-color: #4a736e;
+    box-shadow: 
+    #4fbaaa 0px 0px 10px 2px,
+    #15675d 0px 0px 20px 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 15px;
+    text-indent: 30px;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
