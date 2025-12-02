@@ -27,7 +27,7 @@ h3 {
 }
 
 .doll-container img {
-    width: 500px;
+    width: 50%;
     position: absolute;
     image-rendering: auto;
     image-rendering: crisp-edges;
@@ -52,7 +52,7 @@ h3 {
     width: 120px;     /* adjust if needed */
     height: 50px;     /* adjust if needed */
 
-    top: 150px;       /* adjust to align exactly behind eyes */
+    top: 18%;       /* adjust to align exactly behind eyes */
     left: auto;
 
     z-index: 0;       /* below eyes */
