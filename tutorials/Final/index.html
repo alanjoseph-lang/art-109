@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doll Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- LEFT SIDE: DOLL -->
+        <div class="doll-container">
+            <div id="eye-white-rect"></div>
+            <img id="hair" src="hair/hairblack.png">
+            <img id="eyes" src="eyes/eyebrown.png">
+            <img id="skin" src="skin/skinwhite.png">
+            <img id="brows" src="brows/lashblack.png">
+            <img id="bangs" src="bangs/bangsblack.png">
+        </div>
+
+        <!-- RIGHT SIDE: CUSTOMIZATION PANEL -->
+        <div class="panel">
+
+            <h2>Customize Your Doll</h2>
+
+            <!-- HAIR GROUP -->
+            <div class="category">
+                <h4>Straight Hair</h4>
+                <div id="hairstyle-buttons" class="buttons"></div>
+            </div>
+            <div class="category">
+                <h4>Wavy Hair</h4>
+                <div id="wavy-hair-buttons" class="buttons"></div>
+            </div>
+
+            <!-- EYES -->
+            <div class="category">
+                <h3>Eyes</h3>
+                <div id="eyes-buttons" class="buttons"></div>
+            </div>
+
+            <!-- SKIN -->
+            <div class="category">
+                <h3>Skin</h3>
+                <div id="skin-buttons" class="buttons"></div>
+            </div>
+
+            <!-- BACKGROUND -->
+            <div class="category">
+                <h3>Background</h3>
+
+                <!-- Solid / Transparent -->
+                <div id="background-buttons" class="buttons">
+                    <div class="bg-option" data-color="transparent">Transparent</div>
+                    <div class="bg-option" data-color="#ffffff">White</div>
+                    <div class="bg-option" data-color="#f4d2d2">Pink</div>
+                    <div class="bg-option" data-color="#d2e0f4">Light Blue</div>
+                    <div class="bg-option" data-color="#c6f4d2">Mint</div>
+                    <div class="bg-option" data-color="#000000">Black</div>
+                </div>
+
+                <!-- Gradient Background -->
+                <h4>Gradient</h4>
+                <div class="gradient-box">
+                    <label>Color 1:</label>
+                    <input type="color" id="grad-color1" value="#ff9a9e">
+
+                    <label>Color 2:</label>
+                    <input type="color" id="grad-color2" value="#fad0c4">
+
+                    <label>Direction:</label>
+                    <select id="grad-direction">
+                        <option value="vertical">Vertical</option>
+                        <option value="horizontal">Horizontal</option>
+                    </select>
+
+                    <button id="gradient-apply">Apply Gradient</button>
+                </div>
+
+                <!-- UPLOAD -->
+                <h4>Upload Background Image</h4>
+                <input type="file" id="upload-bg" accept="image/png,image/jpeg,image/webp">
+            </div>
+
+            <!-- DOWNLOAD -->
+            <div class="download-area">
+                <button id="downloadBtn">Download as PNG</button>
+            </div>
+
+        </div><!-- panel end -->
+
+    </div><!-- app end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
